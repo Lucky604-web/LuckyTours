@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Tours - Zermatt</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            width: 80px;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Lucky_Tours_Logo_Transparent.png" alt="Lucky Tours Logo">
+        </div>
+        <div>
+            <h1>Welcome to Lucky Tours</h1>
+            <p>Your guide to amazing travel destinations</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="zermatt.html">Zermatt</a></li>
+            <li><a href="budapest.html">Budapest</a></li>
+            <li><a href="albufeira.html">Albufeira</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section class="about">
+            <h2>About Lucky Tours</h2>
+            <p>Lucky Tours is dedicated to bringing you the best travel experiences with carefully curated guides for some of the most breathtaking destinations.</p>
+        </section>
+
+        <section class="contact-form">
+            <h3 id="contactForm">Contact Us</h3>
+            <form action="#" method="post" aria-labelledby="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here" required aria-required="true"></textarea>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+        </section>        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Lucky Tours | Designed by Lucky</p>
+    </footer>
+
+    <script>
+        // Simple form submission feedback
+        const form = document.querySelector("form");
+        const formFeedback = document.getElementById("formFeedback");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            formFeedback.textContent = "Thank you for reaching out! We'll get back to you soon.";
+            form.reset();
+        });
+    </script>
+</body>
+</html>

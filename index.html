@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Tours</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            width: 80px;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        .destination-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .destination {
+            flex: 1;
+            text-align: center;
+        }
+        .destination img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Lucky_Tours_Logo_Transparent.png" alt="Lucky Tours Logo">
+        </div>
+        <div>
+            <h1>Welcome to Lucky Tours</h1>
+            <p>Explore the beauty of Zermatt, Budapest, and Albufeira</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="zermatt.html">Zermatt, Switzerland</a></li>
+            <li><a href="budapest.html">Budapest, Hungary</a></li>
+            <li><a href="albufeira.html">Albufeira, Portugal</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Discover Breathtaking Destinations</h2>
+            <p>From the snowy peaks of Zermatt to the historic streets of Budapest and the sunny beaches of Albufeira, our guide will help you explore these stunning locations.</p>
+        </section>
+        <section class="destination-gallery">
+            <h2>Explore Our Featured Destinations</h2> <!-- Added heading -->
+            <div class="destination">
+                <img src="images/Zermatt_2.jpg" alt="Zermatt Hike View">
+                <p>Zermatt: Home to the iconic Matterhorn and stunning alpine scenery.</p>
+            </div>
+            <div class="destination">
+                <img src="images/Budapest_3.jpg" alt="Danube River Cruise">
+                <p>Budapest: The Pearl of the Danube, rich in history and culture.</p>
+            </div>
+            <div class="destination">
+                <img src="images/Albuferia_3.jpg" alt="Old Town Albufeira">
+                <p>Albufeira: Golden beaches, vibrant nightlife, and breathtaking coastlines.</p>
+            </div>
+        </section>        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Lucky Tours | Designed by Lucky</p>
+    </footer>
+</body>
+</html>
+
